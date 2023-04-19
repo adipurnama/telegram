@@ -139,6 +139,8 @@ defmodule Telegram.Poller.Task do
 
       {:error, "timeout"} ->
         Logger.info( "Telegram.Api.request 'getUpdates' error 'timeout'")
+        updates = %{}
+        updates
 
       error ->
         # coveralls-ignore-start
