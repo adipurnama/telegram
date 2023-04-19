@@ -138,7 +138,7 @@ defmodule Telegram.Poller.Task do
         updates
 
       {:error, "timeout"} ->
-        Logger.info( "Telegram.Api.request 'getUpdates' error 'timeout'")
+        Logger.debug( "Telegram.Api.request 'getUpdates' error 'timeout'. Waiting for next updates...")
         []
 
       error ->
